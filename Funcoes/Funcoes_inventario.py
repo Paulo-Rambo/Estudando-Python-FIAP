@@ -1,6 +1,8 @@
 def exibir(arquivo):
     with open(arquivo, "r") as inv:
+        linhas = inv.readlines()
         print(inv.readlines())
+        return linhas
 
 def persistir(arquivo, inventario):
     with open(arquivo, "a") as inv:
